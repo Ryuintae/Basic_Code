@@ -8,7 +8,7 @@ public class gugudan {
 		//출력형식과 같게 N*1부터 N*9까지 출력한다.
 		//출력형식과 같게 N*1부터 N*9까지 출력한다.
 		//하이루 방가방가~
-		//나는 인태라고해
+		//나는 예은이라고해
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
         sc.close();
