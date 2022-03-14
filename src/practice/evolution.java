@@ -9,8 +9,7 @@ public class evolution {
 
 		int n = sc.nextInt();
 
-		for (int i = 1; i <= 9; i++) {
-			System.out.println(n + "*" + i +"="+ n * i);
+
 		}
 
 	}
