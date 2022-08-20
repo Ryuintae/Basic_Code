@@ -4,35 +4,34 @@ import java.util.Scanner;
 
 public class part4 {
 	public static void main(String[] args) {
-		// ¹è¿­À» ÀÌ¿ëÇÏ¿© Å°¸¦ ÀÔ·Â¹Ş°í Æò±Õ/ÃÖÀå½Å/ÃÖ´Ü½ÅÀ» ±¸ºĞÇÏ¼¼¿ä
+		// ë°°ì—´ì„ ì´ìš©í•˜ì—¬ í‚¤ë¥¼ ì…ë ¥ë°›ê³  í‰ê· /ìµœì¥ì‹ /ìµœë‹¨ì‹ ì„ êµ¬ë¶„í•˜ì„¸ìš”
 
-		String ArrName[] = { "¹Î¼ö", "¿µÈñ", "±æµ¿", "Çö¼ö", "Áø¼ö" };
+		String ArrName[] = { "ë¯¼ìˆ˜", "ì˜í¬", "ê¸¸ë™", "í˜„ìˆ˜", "ì§„ìˆ˜" };
 		int arr[] = new int[5];
 		int totalheight = 0;
 		int maxheight = 0;
 		int maxheightIndex = 0;
 		int minheightIndex = 0;
-		int minheight = 0;	//¿Ö ¼±¾ğÇÏ°í ½ÇÇàÇßÀ»¶§´Â
-
+		int minheight = 0;	
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("5¸íÀÇ ¾ÆÀÌÀÇ Å°¸¦ ¼ø¼­´ë·Î ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("5ëª…ì˜ ì•„ì´ì˜ í‚¤ë¥¼ ìˆœì„œëŒ€ë¡œ ì…ë ¥í•˜ì„¸ìš”");
 		for (int i = 0; i < arr.length; i++) {
-			arr[i] = sc.nextInt();// ¾î¶»°ÔÇÏ¸é ÀÔ·Â¹ŞÀº 0 °ªÀÌ minheight·Î ¼±¾ğÇÒ¼öÀÖÀ»±î
+			arr[i] = sc.nextInt();// ì–´ë–»ê²Œí•˜ë©´ ì…ë ¥ë°›ì€ 0 ê°’ì´ minheightë¡œ ì„ ì–¸í• ìˆ˜ìˆì„ê¹Œ
 			totalheight += arr[i];
 			minheight = arr[0];
 			if (maxheight < arr[i]) {
 				maxheight = arr[i];
 				maxheightIndex = i;
-//				maxheightIndex = arr.length;  ÀÎµ¦½º °ª¿¡ ¾î¶»°Ô max¼ıÀÚ¸¦ ³Ö³ª °í¹ÎÀ» Çß´Âµ¥ i¸¦ »ç¿ëÇÏ¸é °¡´ÉÇÏ´Ù.
+//				maxheightIndex = arr.length;  ì¸ë±ìŠ¤ ê°’ì— ì–´ë–»ê²Œ maxìˆ«ìë¥¼ ë„£ë‚˜ ê³ ë¯¼ì„ í–ˆëŠ”ë° ië¥¼ ì‚¬ìš©í•˜ë©´ ê°€ëŠ¥í•˜ë‹¤.
 			} else if (minheight > arr[i]) {
 				minheight = arr[i];
 				minheightIndex = i;
 			}
 		}
-		System.out.println("°¡Àå Å« Å°´Â " + maxheight + "\tÇĞ»ıÀÌ¸§Àº" + ArrName[maxheightIndex]);
-		System.out.println("°¡Àå ÀÛÀºÅ°´Â " + minheight + "\tÇĞ»ıÀÌ¸§Àº" + ArrName[minheightIndex]);
-		System.out.println("ÃÑÇÕ Å°´Â" + totalheight);
-		System.out.println("Æò±Õ Å°´Â" + (totalheight / arr.length));
+		System.out.println("ê°€ì¥ í° í‚¤ëŠ” " + maxheight + "\tí•™ìƒì´ë¦„ì€" + ArrName[maxheightIndex]);
+		System.out.println("ê°€ì¥ ì‘ì€í‚¤ëŠ” " + minheight + "\tí•™ìƒì´ë¦„ì€" + ArrName[minheightIndex]);
+		System.out.println("ì´í•© í‚¤ëŠ”" + totalheight);
+		System.out.println("í‰ê·  í‚¤ëŠ”" + (totalheight / arr.length));
 	}
 }
