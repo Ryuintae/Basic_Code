@@ -17,7 +17,7 @@ public class part4 {
 
 		System.out.println("5명의 아이의 키를 순서대로 입력하세요");
 		for (int i = 0; i < arr.length; i++) {
-			arr[i] = sc.nextInt();// 어떻게하면 입력받은 0 값이 minheight로 선언할수있을까
+			arr[i] = sc.nextInt();
 			totalheight += arr[i];
 			minheight = arr[0];
 			if (maxheight < arr[i]) {
