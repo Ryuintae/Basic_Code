@@ -23,7 +23,7 @@ public class part4 {
 			if (maxheight < arr[i]) {
 				maxheight = arr[i];
 				maxheightIndex = i;
-//				maxheightIndex = arr.length;  인덱스 값에 어떻게 max숫자를 넣나 고민을 했는데 i를 사용하면 가능하다.
+		// 인덱스 값에 어떻게 max숫자를 넣나 고민을 했는데 i를 사용하면 가능하다.
 			} else if (minheight > arr[i]) {
 				minheight = arr[i];
 				minheightIndex = i;
